@@ -1,8 +1,7 @@
 # MoviePicker AI/ML Pivot — Brainstorm Resume Notes
 
-**Status:** Brainstorm paused mid-Section 5 (roadmap), awaiting user approval to write the formal design doc.
-**Paused:** 2026-05-04
-**Resume protocol:** approve Section 5 → write design spec to `docs/superpowers/specs/2026-05-04-moviepicker-aiml-design.md` → user reviews → invoke `superpowers:writing-plans` for v3.0 implementation plan.
+**Status:** RESOLVED 2026-07-09. Section 5 approved as-is; formal design doc written to `docs/superpowers/specs/2026-05-04-moviepicker-aiml-design.md`. This file is kept as brainstorm history only; the design doc is the source of truth.
+**Paused:** 2026-05-04. **Resumed and closed:** 2026-07-09.
 
 ---
 
@@ -152,7 +151,7 @@ Each release independently shippable. No release retroactively breaks v3.0 eval.
 
 ## Outstanding security item
 
-The new Jellyfin API key (`6f9a…27cd`) is currently active and was pasted into chat during reconnaissance. **Revoke it in Jellyfin → Dashboard → API Keys before shipping.** When export script is built, credentials live in `~/.config/moviepicker/.env` (gitignored, outside repo).
+RESOLVED 2026-07-09: the exposed Jellyfin API key (`6f9a…27cd`) was revoked in Jellyfin → Dashboard → API Keys. Export-script credentials will live in `~/.config/moviepicker/.env` (gitignored, outside repo) per the design doc.
 
 ---
 
